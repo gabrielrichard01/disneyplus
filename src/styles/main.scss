@@ -1,6 +1,7 @@
 @use './variaveis';
 @use './hero';
 @use './shows';
+@use './plans';
 
 @font-face{
     font-family: Avenir;
@@ -29,6 +30,7 @@ body{
     font-size: $fontSize;
     line-height: $fontSize + 10px;
     color: variaveis.$corTextoPrincipal;
+    margin-bottom: 2vw;
 }
 
 @mixin title($fontSize: 40px){
@@ -62,4 +64,18 @@ body{
 
 .title--small{
     @include title(22px);
+}
+
+.button{
+    display: block;
+    width: 80%;
+    height: 50px;
+    font-size: 18px;
+    color: variaveis.$corTextoSecundario;
+    background-color: #6421ff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
 }
